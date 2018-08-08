@@ -2,4 +2,7 @@
 /.project
 /*.o
 /libskewt.a
+Tribits/
+googletest
+testframework
 
