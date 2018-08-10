@@ -1,0 +1,24 @@
+# Provide access to QT-generated code
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
+
+SET(HEADERS
+SkewtQtTest.h
+)
+
+SET(SOURCES
+SkewtQtTest.cpp
+)
+QT5_WRAP_CPP(QMOC_FILES
+	${HEADERS}
+)
+
+TRIBITS_ADD_LIBRARY(skewtqttestlib
+  SOURCES ${SOURCES} ${QMOC_FILES} ${HEADERS}
+  TESTONLY
+)
+
+TRIBITS_ADD_EXECUTABLE(skewtqtest
+  NOEXEPREFIX
+  SOURCES test.cpp
+  TESTONLYLIBS skewtqttestlib
+)

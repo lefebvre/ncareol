@@ -1,0 +1,25 @@
+TRIBITS_SUBPACKAGE(skewtqt)
+
+
+SET(SOURCE
+SkewTAdapterQt.cpp
+)
+
+SET(HEADERS
+SkewTAdapterQt.h
+)
+
+QT5_WRAP_CPP(MOC_FILES ${HEADERS})
+
+#
+# Add library
+TRIBITS_ADD_LIBRARY(skewtqt
+  SOURCES ${SOURCE} ${MOC_FILES}
+  NOINSTALLHEADERS ${HEADERS}
+)
+#
+# Add example directory
+TRIBITS_ADD_EXAMPLE_DIRECTORIES(example)
+
+INSTALL(FILES ${HEADERS} DESTINATION "include/ncareolskewtqt/")
+TRIBITS_SUBPACKAGE_POSTPROCESS()

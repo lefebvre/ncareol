@@ -6,3 +6,5 @@ Tribits/
 googletest
 testframework
 CMakeLists.txt.user
+.vs/
+CMakeSettings.json

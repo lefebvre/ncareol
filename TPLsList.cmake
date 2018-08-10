@@ -54,9 +54,10 @@
 #
 
 SET(ncareol_TPLS_FINDMODS_CLASSIFICATIONS
-  Qt5Core    "cmake/TPLs/"  ST
-  Qt5Gui     "cmake/TPLs/"  ST
-  Qt5Widgets "cmake/TPLs/"  ST
+  Qt5Core         "cmake/TPLs/"  ST
+  Qt5PrintSupport "cmake/TPLs/"  ST
+  Qt5Gui          "cmake/TPLs/"  ST
+  Qt5Widgets      "cmake/TPLs/"  ST
 )
 
 ##---------------------------------------------------------------------------##

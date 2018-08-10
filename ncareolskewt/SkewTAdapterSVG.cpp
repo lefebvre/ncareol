@@ -394,7 +394,7 @@ std::string SkewTSVGPolyline::draw()
   std::string result;
 
   // draw a polyline, using our collected points.
-  int nPoints = _x.size();
+  int nPoints = int(_x.size());
 
   result = "<path d=\n";
   result += "\"M ";

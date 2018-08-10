@@ -1,4 +1,5 @@
 TRIBITS_PACKAGE_DEFINE_DEPENDENCIES(
    SUBPACKAGES_DIRS_CLASSIFICATIONS_OPTREQS
-     skewt ncareolskewt SS OPTIONAL
+     skewt   ncareolskewt   SS OPTIONAL
+     skewtqt ncareolskewtqt SS OPTIONAL
 )
