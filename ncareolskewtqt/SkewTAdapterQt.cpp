@@ -711,8 +711,8 @@ void SkewTAdapterQt::print(QPrinter* printer, std::string titleOverride)
 }
 
 //////////////////////////////////////////////////////////////////////
-SkewTAdapterQt::SkewTQtPolyline::SkewTQtPolyline(std::vector<double> x,
-                                                 std::vector<double> y,
+SkewTAdapterQt::SkewTQtPolyline::SkewTQtPolyline(const std::vector<double>& x,
+                                                 const std::vector<double>& y,
                                                  QPen pen)
     : _x(x)
     , _y(y)

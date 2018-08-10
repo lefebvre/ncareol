@@ -284,7 +284,8 @@ class SkewTAdapterQt : public QWidget, public SkewTAdapter
      * @param y The y locations
      * @param pen The pen for drawing the text.
      */
-    SkewTQtPolyline(std::vector<double> x, std::vector<double> y, QPen pen);
+    SkewTQtPolyline(const std::vector<double>& x, const std::vector<double>& y,
+                    QPen pen);
     /**
      * Destructor
      */
